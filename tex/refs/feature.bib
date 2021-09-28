@@ -1,0 +1,177 @@
+
+% GLCM
+@article{haralick_textural_1973,
+  title    = {Textural {Features} for {Image} {Classification}},
+  volume   = {SMC-3},
+  issn     = {2168-2909},
+  doi      = {10.1109/TSMC.1973.4309314},
+  abstract = {Texture is one of the important characteristics used in
+  identifying objects or regions of interest in an image, whether the image be a
+  photomicrograph, an aerial photograph, or a satellite image. This paper
+  describes some easily computable textural features based on gray-tone spatial
+  dependancies, and illustrates their application in category-identification
+  tasks of three different kinds of image data: photomicrographs of five kinds
+  of sandstones, 1:20 000 panchromatic aerial photographs of eight land-use
+  categories, and Earth Resources Technology Satellite (ERTS) multispecial
+  imagery containing seven land-use categories. We use two kinds of decision
+  rules: one for which the decision regions are convex polyhedra (a piecewise
+  linear decision rule), and one for which the decision regions are rectangular
+  parallelpipeds (a min-max decision rule). In each experiment the data set was
+  divided into two parts, a training set and a test set. Test set identification
+  accuracy is 89 percent for the photomicrographs, 82 percent for the aerial
+  photographic imagery, and 83 percent for the satellite imagery. These results
+  indicate that the easily computable textural features probably have a general
+  applicability for a wide variety of image-classification applications.},
+  number   = {6},
+  journal  = {IEEE Transactions on Systems, Man, and
+  Cybernetics},
+  author   = {Haralick, Robert M. and Shanmugam, K. and Dinstein,
+  Its'Hak},
+  month    = nov,
+  year     = {1973},
+  keywords = {Image classification,
+  Image resolution, Satellites, Testing, Spatial resolution, Crops, Humans,
+  Earth, Piecewise linear techniques, Application software},
+  pages    = {610--621}
+}
+
+% LBP
+@article{ojala_multiresolution_2002,
+  title    = {Multiresolution gray-scale and rotation invariant texture
+  classification with local binary patterns},
+  volume   = {24},
+  issn     = {1939-3539},
+  doi      = {10.1109/TPAMI.2002.1017623},
+  abstract = {Presents a
+  theoretically very simple, yet efficient, multiresolution approach to
+  gray-scale and rotation invariant texture classification based on local binary
+  patterns and nonparametric discrimination of sample and prototype
+  distributions. The method is based on recognizing that certain local binary
+  patterns, termed "uniform," are fundamental properties of local image texture
+  and their occurrence histogram is proven to be a very powerful texture
+  feature. We derive a generalized gray-scale and rotation invariant operator
+  presentation that allows for detecting the "uniform" patterns for any
+  quantization of the angular space and for any spatial resolution and presents
+  a method for combining multiple operators for multiresolution analysis. The
+  proposed approach is very robust in terms of gray-scale variations since the
+  operator is, by definition, invariant against any monotonic transformation of
+  the gray scale. Another advantage is computational simplicity as the operator
+  can be realized with a few operations in a small neighborhood and a lookup
+  table. Experimental results demonstrate that good discrimination can be
+  achieved with the occurrence statistics of simple rotation invariant local
+  binary patterns.},
+  number   = {7},
+  journal  = {IEEE Transactions on Pattern
+  Analysis and Machine Intelligence},
+  author   = {Ojala, T. and Pietikainen, M.
+  and Maenpaa, T.},
+  month    = jul,
+  year     = {2002},
+  keywords = {Gray-scale,
+  Spatial resolution, Prototypes, Pattern recognition, Image recognition, Image
+  texture, Histograms, Quantization, Multiresolution analysis, Robustness},
+  pages    = {971--987}
+}
+
+% SIFT
+@phdthesis{lazebnik_local_2006,
+  title    = {Local, semi-local and global models for texture, object and scene
+  recognition},
+  abstract = {This dissertation addresses the problems of
+  recognizing textures, objects, and scenes in photographs. We present
+  approaches to these recognition tasks that combine salient local image
+  features with spatial relations and effective discriminative learning
+  techniques. First, we introduce a bag of features image model for recognizing
+  textured surfaces under a wide range of transformations, including viewpoint
+  changes and non-rigid deformations. We present results of a large-scale
+  comparative evaluation indicating that bags of features can be effective not
+  only for texture, but also for object categorization, even in the presence of
+  substantial clutter and intra-class variation. We also show how to augment the
+  purely local image representation with statistical co-occurrence relations
+  between pairs of nearby features, and develop a learning and classification
+  framework for the task of classifying individual features in a multi-texture
+  image. Next, we present a more structured alternative to bags of features for
+  object recognition, namely, an image representation based on semi-local parts,
+  or groups of features characterized by stable appearance and geometric layout.
+  Semi-local parts are automatically learned from small sets of unsegmented,
+  cluttered images. Finally, we present a global method for recognizing scene
+  categories that works by partitioning the image into increasingly fine
+  sub-regions and computing histograms of local features found inside each
+  sub-region. The resulting spatial pyramid representation demonstrates
+  significantly improved performance on challenging scene categorization
+  tasks.},
+  language = {English},
+  author   = {Lazebnik, Svetlana},
+  year     = {2006},
+  note     = {OCLC: 155253399},
+  isbn     = {9780542774850}
+}
+
+% SPIN
+@article{zhang_local_2007,
+  title      = {Local {Features} and {Kernels} for {Classification} of {Texture} and {Object} {Categories}: {A} {Comprehensive} {Study}},
+  volume     = {73},
+  issn       = {0920-5691, 1573-1405},
+  shorttitle = {Local {Features} and {Kernels} for {Classification} of {Texture} and {Object} {Categories}},
+  url        = {http://link.springer.com/10.1007/s11263-006-9794-4},
+  doi        = {10.1007/s11263-006-9794-4},
+  language   = {en},
+  number     = {2},
+  urldate    = {2021-09-28},
+  journal    = {International Journal of Computer Vision},
+  author     = {Zhang, J. and Marszałek, M. and Lazebnik, S. and Schmid, C.},
+  month      = jun,
+  year       = {2007},
+  pages      = {213--238}
+}
+
+@inproceedings{xu_integrating_2009,
+  title     = {Integrating local feature and global statistics for texture
+  analysis},
+  doi       = {10.1109/ICIP.2009.5413361},
+  abstract  = {A main
+  challenge for texture analysis is to construct a compact texture descriptor
+  which is not only highly discriminative to intra-class textures, but also
+  robust to inter-class variations, geometric and photometric changes. In this
+  paper, a new texture descriptor is developed by integrating the local
+  affine-invariant texture features and the global viewpoint-invariant
+  statistics. Based on the pixel clustering using two state-of-art robust local
+  texture descriptors (i.e. SIFT and SPIN), the proposed texture descriptor
+  enables impressive invariance to a wide range of environmental changes (e.g.
+  view changes, illumination changes, surface distortions) by characterizing the
+  spatial distribution of pixel sets using multi-fractal analysis. Experiments
+  on some real datasets (publicly available) showed that the proposed texture
+  descriptor achieved better performance than some state-of-art techniques in
+  texture retrieval and texture classification while the computation cost is
+  significantly reduced.},
+  booktitle = {2009 16th {IEEE} {International}
+  {Conference} on {Image} {Processing} ({ICIP})},
+  author    = {Xu, Yong and
+  Huang, SiBin and Ji, Hui},
+  month     = nov,
+  year      = {2009},
+  note      = {ISSN: 2381-8549},
+  keywords  = {Statistical analysis, Robustness, Lighting,
+  Fractals, Histograms, Image texture analysis, Pixel, Shape, Surface texture,
+  Information retrieval, Image texture analysis, image classification, image
+  recognition, pattern recognition, feature extraction},
+  pages     = {1377--1380}
+}
+
+% MDLBP
+@article{bedi_mean_2021,
+  title      = {Mean distance local binary pattern: a novel technique for color and texture image retrieval for liver ultrasound images},
+  volume     = {80},
+  issn       = {1380-7501, 1573-7721},
+  shorttitle = {Mean distance local binary pattern},
+  url        = {https://link.springer.com/10.1007/s11042-021-10758-7},
+  doi        = {10.1007/s11042-021-10758-7},
+  language   = {en},
+  number     = {14},
+  urldate    = {2021-09-28},
+  journal    = {Multimedia Tools and Applications},
+  author     = {Bedi, Anterpreet Kaur and Sunkaria, Ramesh Kumar},
+  month      = jun,
+  year       = {2021},
+  pages      = {20773--20802}
+}
