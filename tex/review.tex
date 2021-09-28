@@ -1,9 +1,70 @@
 \documentclass{article}[a4paper]
-\usepackage{biblatex}
-\bibliography{refs}
+\usepackage[pdftex]{hyperref}
+\usepackage[backend=bibtex,sorting=none]{biblatex}
+\addbibresource{refs}
+
+\newcommand{\bitem}[2]{
+    \item[\cite{#1}]
+        \citetitle{#1}, \citeyear{#1}
+        \newline
+        \citeauthor{#1}{ #2}
+}
 
 \begin{document}
-Hello, world!
+
+\section{Feature Extraction}
+\begin{itemize}
+    % GLCM
+    \bitem{haralick_textural_1973}{describe an easily computable feature set for
+        texture analysis called gray level co-occurrence matrices (GLCM). GLCM
+        shows the distribution of co-occurring pixel pairs given a certain
+        distance and direction. Their results show that the method can be
+        generally applicable for image classification and especially for texture
+        analysis.}
+
+    % LBP
+    \bitem{ojala_multiresolution_2002}{propose a feature
+        extraction method that uses gray-scale pixel values and is shown to be
+        rotation invariant for classification purposes. The proposed method (LBP) is
+        also computationally efficient and can be used for texture analysis. The
+        method is grayscale invariant because the neighboring pixels are scaled
+        based on the center pixel value without losing any information. The
+        method is also rotation invariant because the neighboring pixels are
+        related to the center pixel by a rotation-based relationship.}
+
+    % SIFT
+    \bitem{lazebnik_local_2006}{}
+
+    % SPIN
+    \bitem{zhang_local_2007}{}
+
+    \bitem{xu_integrating_2009}{propose a texture descriptor based on
+        \cite{lazebnik_local_2006} and \cite{zhang_local_2007}. They integrate
+        the local-affine feature descriptors from \cite{lazebnik_local_2006} and
+        \cite{zhang_local_2007} along with a global statisical feature called
+        multi-fractal spectrum (MFS). By combining the two features, they create
+        a feature descriptor that is robust to both illumination and affine
+        transforms.}
+
+    % MDLBP
+    \bitem{bedi_mean_2021}{propose Mean distance LBP (MDLBP) that extends
+        \cite{ojala_multiresolution_2002}. Their method changes the relationship
+        between the neighboring pixels and the center pixels such that the
+        nearest pixels are given a higher weight than farther pixels and
+        therefore have a stronger influence on the output pattern.}
+\end{itemize}
+
+\section{Algorithms}
+\begin{itemize}
+    % Paper dating analysis
+    \bitem{lu_paper_2021}{propose a method of texture analysis to date paper
+        from ancient books. They describe using a CNN to first extract global
+        texture features and using a hybrid attention model to extract local
+        texture features. Then, they combine the features as input to a GRU
+        (Gated Recurrent Unit) to train a paper dating time-series model. Their
+        results show comparisons of different loss functions when training their
+        model.}
+\end{itemize}
 
 \printbibliography
 \end{document}
