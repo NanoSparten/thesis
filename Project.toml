@@ -1,0 +1,4 @@
+[deps]
+Images = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
+Pluto = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
